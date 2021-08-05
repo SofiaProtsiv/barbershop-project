@@ -1,0 +1,34 @@
+.sidebar{
+    position: absolute;
+    width: 155px;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.sidevar__list{
+    display: flex;
+    position: absolute;
+    top: 480px;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    background-color: #FFFFFF;
+}
+.sidebar__link{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: $title-text-color;
+}
+.sidebar__link:first-child::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    display: inline-block;
+    background: #303030;
+}
+.sidebar__link:not(:last-child){
+    margin-right: 40px;
+}

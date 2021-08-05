@@ -1,0 +1,59 @@
+.about-pics{
+    display: flex;
+    margin-right: 64px;
+    justify-content: space-between;
+}
+.about__img:not(:last-child){
+margin-right: 30px;
+}
+
+.about-info{
+    width: 500px;
+}
+.about__suptitle{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: $title-text-color;
+    &::before{
+        width: 60px;
+        height: 1px;
+        background: $title-text-color;
+        content: '';
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+.about__title{
+    @extend %section__title;
+    display: block;
+    margin-bottom: 20px;
+}
+.about__subtitle{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $text-color-light;
+}
+.about__decriotion{
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    
+    color: $text-color-light;
+}
+.about__btn{
+    @extend %button;
+    color: $title-text-color;
+}

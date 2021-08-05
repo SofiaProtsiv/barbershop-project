@@ -1,0 +1,30 @@
+.work__suptitle{
+    display: block;
+    margin-bottom: 44px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: $title-text-color;
+    &::before{
+        width: 60px;
+        height: 1px;
+        background: $title-text-color;
+        content: '';
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+.work__list{
+    display: flex;
+    justify-content: space-between;
+}
+.work__item:not(:last-child){
+    margin-right: 30px;
+}
+.work__img{
+    width: 100%;
+}

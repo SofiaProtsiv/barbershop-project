@@ -1,0 +1,27 @@
+nav.navbar{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    padding: 30px 55px 0 55px;
+    box-sizing: border-box;
+}
+
+.logo-img{
+    width: 68px;
+    height: 56px;
+    fill: rgba(48, 48, 48, 1);
+}
+
+
+.slider{
+    width: calc(100% - 155px);
+    height: 100vh;
+    margin-left: auto;
+    background-image: url(../images/Slider/Slider_img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
