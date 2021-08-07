@@ -79,7 +79,7 @@ ul {
   background: #303030;
 }
 
-.about__btn, .price__btn {
+.about__btn, .price__btn, .footer__btn {
   color: #FFFFFF;
   padding: 12px 20px;
   border: 1px solid #FF6C00;
@@ -715,5 +715,159 @@ nav.navbar {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #FFFFFF;
+}
+
+.footer__contacts {
+  width: 50%;
+  height: inherit;
+}
+
+.footer__contacts {
+  padding: 130px 105px 130px 100px;
+}
+
+.contacts__box {
+  position: relative;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.contacts__address {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  display: block;
+  color: #9DA4BD;
+  margin-bottom: 20px;
+}
+
+.contacts__link:last-child {
+  margin-bottom: 70px;
+}
+
+.contacts__icon {
+  position: absolute;
+  left: -0px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  width: 24px;
+}
+
+.footer__contacts {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #9DA4BD;
+}
+
+.footer__form {
+  width: 50%;
+  height: inherit;
+}
+
+.footer__form {
+  padding: 130px 40px 193px 0;
+}
+
+.form-online-appointment {
+  position: relative;
+  display: block;
+}
+
+.form-field__item {
+  margin-bottom: 44px;
+  margin-right: 30px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.form-field__label {
+  position: absolute;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.form-field__input {
+  width: 270px;
+  height: 24px;
+  padding-left: 80px;
+  background: #191C26;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 24px;
+  color: white;
+  outline: none;
+}
+
+.form-field--label {
+  display: block;
+}
+
+.footer__btn {
+  display: block;
+  background-color: #191C26;
+}
+
+.copyright {
+  width: 100%;
+  min-height: 125px;
+  height: auto;
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.copy__text {
+  color: #9DA4BD;
+}
+
+.social-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-box__link {
+  color: #303030;
+}
+
+.social-box__link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-box__link:not(:last-child)::before {
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  content: '';
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=main.css.map */
