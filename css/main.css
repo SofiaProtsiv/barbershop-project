@@ -97,8 +97,21 @@ ul {
   background-color: #FF6C00;
 }
 
+.header {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  padding: 276px 0 206px;
+  background-image: url(../images/Slider/Slider_img-1.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+}
+
 .sidebar {
   position: absolute;
+  top: 0;
   width: 155px;
   height: 100vh;
   background-color: #FFFFFF;
@@ -152,8 +165,8 @@ ul {
 }
 
 nav.navbar {
-  width: 100%;
-  padding-top: 30px;
+  position: absolute;
+  top: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,11 +175,9 @@ nav.navbar {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  top: 0;
+  width: 100%;
   padding: 30px 55px 0 55px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding-top: 30px;
 }
 
 .logo-img {
@@ -178,13 +189,7 @@ nav.navbar {
 .slider {
   width: -webkit-calc(100% - 155px);
   width: calc(100% - 155px);
-  height: 100vh;
   margin-left: auto;
-  background-image: url(../images/Slider/Slider_img-1.jpg);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-attachment: fixed;
 }
 
 .navbar {
@@ -726,11 +731,8 @@ nav.navbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../images/Footer/bg.png);
   -webkit-background-size: 50% 100%;
           background-size: 50% 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
   color: #9DA4BD;
 }
 
@@ -747,9 +749,13 @@ nav.navbar {
 .footer__contacts {
   width: 50%;
   height: inherit;
-}
-
-.footer__contacts {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #9DA4BD;
+  background-image: url(/images/Footer/bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
   padding: 130px 105px 130px 100px;
 }
 
@@ -784,15 +790,8 @@ nav.navbar {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 24px;
   width: 24px;
-}
-
-.footer__contacts {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #9DA4BD;
+  height: 24px;
 }
 
 .footer__form {
