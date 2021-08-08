@@ -23,6 +23,10 @@
     letter-spacing: 0.1em;
 
     color: #FFFFFF;
+    transition: color 250ms $transition;
+    &:focus, &:hover{
+        color: #FF6C00;
+    }
 }
 .auth-nav__list{
     display: flex;
@@ -31,10 +35,12 @@
 .auth-nav__link{
     margin-right: 40px;
     color: #FFFFFF;
+
+    transition: color 250ms $transition;
+    &:focus, &:hover{
+        color: #FF6C00;
+    }
 }
 .auth-nav__btn{
-    color: #FFFFFF;
-    padding: 12px 20px;
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
+    @extend %button;
 }

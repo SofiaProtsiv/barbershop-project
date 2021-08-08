@@ -56,4 +56,7 @@ margin-right: 30px;
 .about__btn{
     @extend %button;
     color: $title-text-color;
+    &:hover, &:focus{
+        color: #fff;
+    }
 }

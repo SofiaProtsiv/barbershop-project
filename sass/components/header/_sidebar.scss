@@ -17,6 +17,11 @@
     font-size: 11px;
     line-height: 15px;
     color: $title-text-color;
+
+    transition: color 250ms $transition;
+    &:focus, &:hover{
+        color: #FF6C00;
+    }
 }
 .sidebar__link:first-child::before{
     content: "";

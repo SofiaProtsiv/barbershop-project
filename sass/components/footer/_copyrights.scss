@@ -16,6 +16,11 @@
 }
 .social-box__link{
     color: #303030;
+    transition: color 250ms $transition;
+
+    &:focus, &:hover{
+        color: #FF6C00;
+    }
     &:not(:last-child){
         margin-right: 40px;
         &::before{
