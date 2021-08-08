@@ -726,7 +726,7 @@ nav.navbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../images/Footer/Bg.png);
+  background-image: url(./images/Footer/Bg.png);
   -webkit-background-size: 50% 100%;
           background-size: 50% 100%;
   background-repeat: no-repeat;
