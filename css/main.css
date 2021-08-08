@@ -825,7 +825,7 @@ nav.navbar {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #9DA4BD99;
 }
 
 .form-field__input {
@@ -834,10 +834,15 @@ nav.navbar {
   padding-left: 80px;
   background: #191C26;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #9DA4BD99;
   font-size: 24px;
   color: white;
   outline: none;
+}
+
+.form-field__input:focus .form-field__label {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .form-field--label {
