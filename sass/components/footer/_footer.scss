@@ -12,6 +12,10 @@
         display: block;
         padding: 84px 0 0;
       }
+      @media screen and (min-width: 768px) {
+        display: block;
+        padding: 100px 40px;
+      }
 }
 .footer__title{   
     margin-bottom: 40px;

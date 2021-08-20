@@ -1,18 +1,20 @@
 .copyright{
-    // width: 100%;
-    // min-height: 125px;
-    // height: auto;
-    // background-color: #F7F7F7;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding: 0 50px;
     @media screen and (max-width: 768px) {
         min-height: 125px;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column-reverse;
         padding: 0 31px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        min-height: 125px;
+        height: auto;
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
     }
 }
 .copy__text{

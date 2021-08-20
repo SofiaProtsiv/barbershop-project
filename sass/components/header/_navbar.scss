@@ -34,16 +34,7 @@
   fill: black
   }
 }
-.navbar{
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 55px 0 55px;
-    padding-top: 30px;
-
-    
+.navbar{ 
     @media screen and (max-width: 768px) {
       display: none;
       position: fixed;
@@ -62,6 +53,18 @@
           flex-direction: column;
         }
       }
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 155px;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding-top: 52px;
+      }
 }
 
 .nav-holder{
@@ -72,6 +75,8 @@
       margin-left: 40px;
     }
     @media screen and (min-width: 768px) {
+      width: calc(100% - 155px);
+      padding: 0 24px;
       height: 56px;
     }
 }
@@ -110,6 +115,9 @@
     margin-bottom: 24px;
   }
   @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 40px;
   }
 }
@@ -136,9 +144,20 @@
       margin-top: 64px;
       flex-direction: column;
       }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: auto;
+        margin-top: -20px;
+        justify-content: center;
+        &:first-child{
+          margin-top: 20px;
+        }
+      }
 }
 .auth-nav__link{
-    margin-right: 40px;
+    // margin-right: 40px;
+
     color: #FFFFFF;
 
     transition: color 250ms $transition;
@@ -150,9 +169,15 @@
       font-size: 18px;
       line-height: 1.38;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
       
       color: #303030;
+      }
+
+      @media screen and (min-width: 768px) {
+        text-align: center;
+        &:not(:last-child){
+          margin-top: 20px
+        }
       }
 }
 .auth-nav__btn{
@@ -165,14 +190,19 @@
       font-size: 12px;
       line-height: 1.3;
       letter-spacing: 0.09em;
-      text-transform: uppercase;
       text-align: center;
       
       color: #303030;
       &:focus, &:hover{
         color: white;
     }
-      }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    
+    width: 160px;
+  }
 }
 
 .network__list{
