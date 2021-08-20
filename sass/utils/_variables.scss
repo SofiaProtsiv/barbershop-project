@@ -20,6 +20,9 @@ body {
     line-height: 1.14;
 
     background-color: white;
+    &.lock{
+        overflow: hidden;
+    }
 }
 
 a {
@@ -47,6 +50,9 @@ ul {
 }
 .section{
     padding: 130px 55px;
+    @media screen and (max-width: 768px) {
+        padding: 84px 31px;
+      }
 }
 %section__title{
     font-family: 'Raleway';
@@ -84,7 +90,7 @@ ul {
     border-radius: 25px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: background-color 250ms $transition;
+    transition: background-color 250ms $transition, color 250ms $transition;
     &:hover, &:focus{
         background-color: #FF6C00;
     }

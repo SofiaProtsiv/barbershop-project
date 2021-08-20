@@ -2,13 +2,22 @@
     display: flex;
     margin-right: 64px;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: none;
+      }
 }
 .about__img:not(:last-child){
 margin-right: 30px;
 }
 
 .about-info{
-    width: 500px;
+    @media screen and (min-width: 480px) {
+        width: 418px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 500px;
+      }
+
 }
 .about__suptitle{
     display: block;
@@ -34,6 +43,9 @@ margin-right: 30px;
     @extend %section__title;
     display: block;
     margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+      }
 }
 .about__subtitle{
     display: block;
@@ -42,6 +54,9 @@ margin-right: 30px;
     line-height: 1.6;
     letter-spacing: 0.02em;
     color: $text-color-light;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
 }
 .about__decriotion{
     display: block;

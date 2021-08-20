@@ -1,21 +1,11 @@
-nav.navbar{
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 55px 0 55px;
-    padding-top: 30px;
-}
-
-.logo-img{
-    width: 68px;
-    height: 56px;
-    fill: rgba(48, 48, 48, 1);
-}
-
 
 .slider{
-    width: calc(100% - 155px);
-    margin-left: auto;
+    @media screen and (max-width: 768px) {
+
+        margin-left: 0;
+      }
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 155px);
+        margin-left: auto;
+      }
 }

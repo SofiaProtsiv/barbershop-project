@@ -1,8 +1,13 @@
 .hero{
-    position: absolute;
-    left: 255px;
-    top: 272px;
-    width: 500px;
+    @media screen and (max-width: 768px) {
+        width: 306px;
+        margin-left: 31px;
+      }
+    @media screen and (min-width: 12000px) {
+        left: 255px;
+        top: 272px;
+        width: 500px;
+    }
 }
 .hero__suptitle{
     font-weight: 600;
@@ -31,6 +36,10 @@
     letter-spacing: 0.05em;
 
     color: #FFFFFF;
+    @media screen and (max-width: 768px) {
+        font-size: 48px;
+      }
+
 }
 .hero__decription{
     font-weight: 400;
@@ -39,4 +48,7 @@
     letter-spacing: 0.02em;
     
     color: #9DA4BD;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
  }

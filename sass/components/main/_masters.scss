@@ -31,6 +31,19 @@
     flex-basis: 300px;
 
     text-align: center;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+.master__card{
+    @media screen and (max-width: 768px) {
+        &:not(:last-child){
+            margin-bottom: 64px;
+        }
+    }
+}
+.master__img{
+    width: 100%;
 }
 .master__name{
     margin-top: 30px;
@@ -73,4 +86,5 @@
 }
 .master-social__icon{
     height: 20px;
+    width: 24px;
 }
