@@ -217,6 +217,10 @@ ul {
   z-index: 2;
 }
 
+.menu__button--open {
+  position: fixed;
+}
+
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
@@ -268,7 +272,7 @@ ul {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 480px;
     height: 100vh;
     padding: 48px 40px;
