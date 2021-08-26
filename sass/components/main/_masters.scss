@@ -1,7 +1,7 @@
 .section__masters{
     background-color: #F7F7F7;
     @media screen and (min-width: 768px) {
-        padding: 100px 159px;
+        padding: 100px 0;
       }
 }
 .masters__suptitle{
@@ -29,23 +29,26 @@
     margin-bottom: 44px;
 }
 .masters__list{
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 300px;
-
     text-align: center;
     @media screen and (max-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 300px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
     }
 }
 .master__card{
-@media screen and (min-width: 480px) {
-    width: 418px;
+@media screen and (max-width: 1200px) {
+    &:not(:last-child){
+        margin-bottom: 64px;
+    }
 }
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         &:not(:last-child){
-            margin-bottom: 64px;
+            margin-right: 30px;
         }
     }
 }

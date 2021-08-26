@@ -1,20 +1,19 @@
 .footer__section{
-    width: 100%;
-    min-height: 640px;
-    height: auto;
     background-color: #191C26;
-    padding: 0 50px;
     display: flex;
-
-    background-size: 50% 100%;
     color: #9DA4BD;
+    
     @media screen and (max-width: 768px) {
         display: block;
         padding: 84px 0 0;
       }
       @media screen and (min-width: 768px) {
         display: block;
-        padding: 100px 40px;
+        padding: 100px 0 0;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        padding: 0;
       }
 }
 .footer__title{   

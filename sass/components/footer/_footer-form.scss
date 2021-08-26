@@ -1,17 +1,30 @@
 .footer__form{
-    // width: 50%;
-    // height: inherit;
-    // padding: 130px 40px 193px 0;
     @media screen and (max-width: 768px) {
         display: block;
         margin-bottom: 84px;
-        padding: 0 31px;
+        // padding: 0 31px;
       }
       @media screen and (min-width: 768px) {
         padding-bottom: 100px;
       }
+      @media screen and (min-width: 1200px) {
+        padding: 100px 0;
+      }
 }
-
+.footer__form--container{
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        margin: 0 auto;
+        padding: 0 31px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 0 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 50%;
+      }
+}
 .form-online-appointment{
     position: relative;
     display: block;
@@ -24,10 +37,19 @@
         display: block;
       }
 }
+.form-field__contact-info{
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 44px;
+      }
+    @media screen and (min-width: 768px) {
+        display: flex;
+      }
+}
 .form-field__item{
     position: relative;
     display: inline-flex;
-    width: 100%;
+
     &:not(:last-child){
         @media screen and (max-width: 768px) {
         margin-bottom: 44px;
@@ -37,10 +59,13 @@
         margin-right: 30px;
         }
     }
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
 }
 
 .form-field__input{
-    width: 297px;
+    width: 100%;
     height: 24px;
 
     background: #191C26;
@@ -56,6 +81,9 @@
     }
     @media screen and (max-width: 768px) {
         width: 100%;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 260px;
       }
 }
 .form-field__label{
@@ -89,6 +117,9 @@
         outline: none;
         border-color: #FFFFFF 
     }
+    @media screen and (min-width: 1200px) {
+        width: 560px;
+      }
 }
 .form-field__legent{
     position: absolute;
@@ -103,7 +134,7 @@
 
 .footer__btn{
     @extend %button;
-    
+    margin-top: 44px;
     @media screen and (max-width: 768px) {
         display: flex;
         justify-content: center;
@@ -115,7 +146,10 @@
         letter-spacing: 0.09em;
         text-transform: uppercase;
     }
-    // display: block;
-    // margin-top: 44px;
+
     background-color: #191C26;
+    @media screen and (min-width: 768px) {
+        display: block;
+      }
+    
 }

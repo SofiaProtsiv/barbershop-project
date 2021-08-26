@@ -55,6 +55,7 @@ ul {
       }
       @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding: 0 55px;
       }
 }
 .flex{
@@ -106,10 +107,16 @@ ul {
     border: 1px solid #FF6C00;
     border-radius: 25px;
     box-sizing: border-box;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 250ms $transition, color 250ms $transition;
     &:hover, &:focus{
         background-color: #FF6C00;
     }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
