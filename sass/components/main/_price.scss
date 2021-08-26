@@ -69,14 +69,19 @@
 }
 .price__decription, .price__text{
     font-weight: 400;
-    font-size: 18px;
     line-height: 1.6;
     text-align: right;
     letter-spacing: 0.02em;
 
     color: #9DA4BD;
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 320px) {
+        font-size: 10px;
+    }
+    @media screen and (min-width: 480px) {
         font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
     }
 }
 .price__btn{
