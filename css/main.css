@@ -189,7 +189,7 @@ img {
   position: absolute;
   top: 0;
   width: 155px;
-  height: 100vh;
+  height: 685px;
   background-color: #FFFFFF;
 }
 
@@ -742,7 +742,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .about__img {
-    width: 270px;
+    width: 250px;
   }
   .about__img:not(:last-child) {
     margin-right: 30px;
@@ -827,6 +827,7 @@ img {
 }
 
 .about__btn {
+  display: inline-block;
   color: #303030;
 }
 

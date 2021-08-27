@@ -17,7 +17,7 @@
         }
     }
     @media screen and (min-width: 1200px) {
-        width: 270px;
+        width: 250px;
         &:not(:last-child){
             margin-right: 30px;
             margin-bottom: 0;
@@ -90,6 +90,7 @@
 }
 .about__btn{
     @extend %button;
+    display: inline-block;
     color: $title-text-color;
     &:hover, &:focus{
         color: #fff;
