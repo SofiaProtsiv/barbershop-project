@@ -735,18 +735,31 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .about__img:not(:last-child) {
+  .about__img--desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__img--desktop {
+    display: block;
+    width: 250px;
+  }
+  .about__img--desktop:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__img--tablet:not(:last-child) {
     margin-bottom: 64px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about__img {
-    width: 250px;
-  }
-  .about__img:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
+  .about__img--tablet {
+    display: none;
   }
 }
 
